@@ -1,0 +1,62 @@
+.form-section {
+  margin-top: 20px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.form-section h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form-section label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: 500;
+}
+
+.form-section input {
+  width: 96%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.item-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.item-table th {
+  background: #f3f4f6;
+  padding: 8px;
+}
+
+.item-table td {
+  padding: 6px;
+  border-bottom: 1px solid #eee;
+}
+
+.item-table input {
+  width: 95%;
+  padding: 6px;
+}
+
+.btn-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-danger {
+  background: #dc3545;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

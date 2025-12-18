@@ -1,0 +1,54 @@
+.page-container {
+  padding: 30px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.list-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-table th {
+  background: #e9edf5;
+  padding: 12px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+}
+
+.list-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.empty-msg {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+.btn-detail {
+  padding: 6px 12px;
+  background: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-detail:hover {
+  background: #004fcc;
+}

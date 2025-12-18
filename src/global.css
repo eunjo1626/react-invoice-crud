@@ -1,0 +1,204 @@
+/* ===========================
+   Global Design Tokens
+   =========================== */
+
+:root {
+  /* 🎨 Colors */
+  --primary: #2563eb;
+  --primary-light: #3b82f6;
+  --danger: #dc2626;
+  --success: #16a34a;
+
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-500: #6b7280;
+  --gray-700: #374151;
+  --gray-900: #111827;
+
+  /* ✏ Text */
+  --font-sm: 13px;
+  --font-md: 15px;
+  --font-lg: 18px;
+  --font-xl: 22px;
+
+  /* 📦 Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+
+  /* 🔘 Borders */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* 🪟 Shadow */
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+  /* 🔘 Button Preset */
+  --btn-padding: 8px 14px;
+  --btn-radius: var(--radius-md);
+  --btn-font: var(--font-md);
+
+  /* 🧩 Table */
+  --table-padding: 10px;
+  --table-head-bg: #f1f5f9;
+  --table-border: 1px solid #e2e8f0;
+}
+
+/* ===========================
+   Layout
+   =========================== */
+
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-5);
+}
+
+/* Card style (Home에서 사용) */
+.card {
+  background: white;
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ===========================
+   Buttons
+   =========================== */
+
+.btn {
+padding: var(--btn-padding);
+border-radius: var(--btn-radius);
+font-size: var(--btn-font);
+color: white;
+border: none !important;
+cursor: pointer;
+transition: 0.15s;
+}
+
+
+/* Primary (기본 파란 버튼) */
+.btn-primary {
+background: var(--primary);
+}
+.btn-primary:hover {
+background: var(--primary-light);
+}
+
+
+/* Secondary (회색 톤 버튼, 수정하기 등) */
+.btn-secondary {
+background: #cccccc !important;
+}
+.btn-secondary:hover {
+background: #6b7280 !important;
+}
+
+
+/* Danger (삭제 버튼) */
+.btn-danger {
+background: red !important;
+}
+.btn-danger:hover {
+background: #e63030 !important;
+}
+
+
+/* Back (뒤로가기 전용 버튼) */
+.btn-back {
+background: pink !important; /* slate-500 */
+}
+.btn-back:hover {
+background: #ec4899 !important; /* slate-600 */
+}
+/* ===========================
+   Tables
+   =========================== */
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: var(--table-border);
+  margin-top: var(--space-4);
+  font-size: var(--font-md);
+}
+
+.data-table th {
+  background: var(--table-head-bg);
+  padding: var(--table-padding);
+  border-bottom: var(--table-border);
+  text-align: left;
+}
+
+.data-table td {
+  padding: var(--table-padding);
+  border-bottom: var(--table-border);
+}
+
+/* ===========================
+   Forms
+   =========================== */
+
+.input {
+  width: 100%;
+  padding: var(--space-2);
+  font-size: var(--font-md);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-sm);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.35);
+}
+
+/* ===========================
+   Section Titles
+   =========================== */
+
+.section-title {
+  font-size: var(--font-xl);
+  font-weight: bold;
+  margin-bottom: var(--space-4);
+}
+
+/* ===========================
+   Utility
+   =========================== */
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); }
+.mt-5 { margin-top: var(--space-5); }
+
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-3 { margin-bottom: var(--space-3); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-5 { margin-bottom: var(--space-5); }
+.negative{
+  color: #d9534f !important;
+  font-weight: bold;
+}
+.amount-negative{
+  color: #d40000;
+  font-weight: 600;
+}
+.amount-positive{
+  color: #333;
+}

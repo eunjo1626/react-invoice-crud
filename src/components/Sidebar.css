@@ -1,0 +1,71 @@
+.sidebar {
+  width: 200px;
+  background-color: #1f2937;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* 로고 */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.logo-text .main-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.logo-text .sub-title {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* 메뉴 */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-section {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.menu-item {
+  color: #d1d5db;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.menu-item:hover {
+  color: #ffffff;
+  background: #374151;
+}
+
+.menu-item.active {
+  color: white;
+  font-weight: bold;
+  background: #4b5563;
+}
